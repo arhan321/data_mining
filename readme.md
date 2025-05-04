@@ -1,6 +1,6 @@
 # Monitoring Google Trends dengan Python
 
-## Nama
+## Bio Data
 - **Nama:** Arhan Malik Alrasyid
 - **NIM:** 20220801151
 - **Mata Kuliah:** Data Mining
