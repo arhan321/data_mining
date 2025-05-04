@@ -3,7 +3,7 @@
 ## Bio Data
 - **Nama:** Arhan Malik Alrasyid
 - **NIM:** 20220801151
-- **Mata Kuliah:** Data Mining
+- **Mata Kuliah:** CSF517 Data Mining EU201 8389
 
 ## Deskripsi
 Proyek ini bertujuan untuk memantau dan menganalisis tren pencarian Google berdasarkan beberapa keyword yang ditentukan oleh pengguna. Tools ini menggunakan layanan Google Trends dan divisualisasikan menggunakan Python.
