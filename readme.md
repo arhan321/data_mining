@@ -29,10 +29,9 @@ Grafik garis yang menunjukkan perubahan popularitas keyword dari waktu ke waktu.
 Grafik batang yang menunjukkan minat pengguna berdasarkan wilayah geografis.
 
 ## Struktur File
-- `monitoring_trends.py`: Script utama Python
+- `monitoring_trend_google_python.ipynb`: Script utama Python
 - `README.md`: Penjelasan proyek
-- `hasil_visualisasi.png` *(opsional)*: Screenshot hasil visualisasi
-- `interpretasi.docx` *(opsional)*: Penjelasan dan analisis tren
+
 
 ## Insight
 Tools ini membantu dalam memahami dinamika minat publik terhadap teknologi/programming seperti Python dan Java. Bisa digunakan untuk riset, analisis pasar, dan prediksi tren.
