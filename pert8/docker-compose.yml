@@ -1,12 +1,12 @@
 services:
 
-  db_metabase:
+  db:
     image: mariadb:10.2
-    container_name: db_metabase
+    container_name: db
     restart: unless-stopped
     tty: true
     ports:
-      - "13306:3306"
+      - "12306:3306"
     volumes:
       - ./db/data:/var/lib/mysql
       - ./db/conf.d:/etc/mysql/conf.d:ro
@@ -15,7 +15,7 @@ services:
       MYSQL_USER: djambred
       MYSQL_DATABASE: metabase
       MYSQL_PASSWORD: p455w0rd1!.
-      MYSQL_ROOT_PASSWORD: p455w0rd
+      MYSQL_ROOT_PASSWORD: 123
       TZ: Asia/Jakarta
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql_db_metabase
@@ -29,7 +29,7 @@ services:
     image: metabase/metabase:latest
     container_name: metabase
     depends_on:
-      db_metabase:
+      db:
         condition: service_healthy
     ports:
       - "80:3000"
@@ -38,6 +38,6 @@ services:
       MB_DB_DBNAME: metabase
       MB_DB_PORT: 3306
       MB_DB_USER: root
-      MB_DB_PASS: p455w0rd
-      MB_DB_HOST: db_metabase
+      MB_DB_PASS: 123
+      MB_DB_HOST: db
     restart: unless-stopped
